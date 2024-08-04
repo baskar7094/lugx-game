@@ -6,7 +6,7 @@ export default function Contact() {
     <div className=' my-20 lg:flex items-center justify-around'>
         <article className='text-center p-4 sm:py-5 md:p-1'>
 
-        <p className='text-lg uppercase'>our shop</p>
+        <p className='text-lg uppercase text-red-400'>our shop</p>
 
 <h2 className='text-xl py-3'>go pre-order buy & get best <span>prices</span> for you!</h2>
 
@@ -16,7 +16,7 @@ export default function Contact() {
 
         </article>
 <article className='text-center my-5 p-4 sm:py-5 md:p-1 md:my-10'>
-    <p className='text-md uppercase py-3 '>newletter</p>
+    <p className='text-md uppercase py-3 text-red-400 '>newletter</p>
     <h2 className='text-xl mb-5'>get up to $100 off just buy <span>subscribe</span> newsletter!</h2>
 
 <input type="email" placeholder='your email' className='ring-2 ring-slate-400  rounded-s-md py-2 px-2' />

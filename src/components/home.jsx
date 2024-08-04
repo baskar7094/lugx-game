@@ -20,15 +20,15 @@ export default function Home() {
           </div>
         </section>
         <Cards />
-        <section className="md:ring-2 ring-slate-300  md:py-5">
-<h2 className="text-center md:text-2xl ">contact us </h2>
+        <section className="md:ring-2 ring-2 ring-slate-300   md:py-5">
+<h2 className="text-center md:text-2xl text-2xl pt-5  ">contact us </h2>
         <Contact />
         </section>
       </main>
 
       <footer>
         <div className="py-5 sm:text-center">
-          <p className="text-white text-md ">
+          <p className="text-white text-md text-center ">
             copyright &copy; 2048 LUGX gaming Company. all rights reserved.
           </p>
           <p className="text-white text-md pt-3 text-center">
@@ -42,18 +42,18 @@ export default function Home() {
 
 function Content(props) {
   return (
-    <>
-      <div className=" text-center py-5 sm:py-10 md:flex justify-around items-center  ">
+    <section className="">
+      <div className=" text-center py-5 sm:py-10 md:flex  justify-around items-center   ">
         <div className="text-white overflow-x-hidden">
-          <h5 className="text-lg uppercase md:text-sm
+          <h5 className="text-md uppercase md:text-sm
           xl:py-3 
           ">{props.sub_heading}</h5>
-          <h1 className="text-3xl sm:text-4xl md:text-3xl py-3 font-bold uppercase sm:text-red-500 md:text-yellow-400 lg:text-blue-800 xl:text-white 2xl:text-red-900
+          <h1 className="text-2xl sm:text-4xl md:text-3xl py-3 font-bold uppercase sm:text-red-500 md:text-yellow-400 lg:text-blue-800 xl:text-white 2xl:text-red-900
           xl:py-4 xl:text-4xl
           ">
             {props.heading}
           </h1>
-          <p className="text-sm mb-5 px-3 sm:px-8 md:px-2 md:w-96 text-wrap xl:w-96">{props.para}</p>
+          <p className="text-xs mb-5 px-3 sm:px-8 md:px-2 md:w-96 text-wrap xl:w-96">{props.para}</p>
           <form className="mb-5 ">
             <input
               type="text"
@@ -82,6 +82,6 @@ function Content(props) {
           </span>
         </div>
       </div>
-    </>
+    </section>
   );
 }

@@ -5,17 +5,19 @@ export default function Cards() {
   return (
     <div>
       {/* service card */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 justify-center items-center gap-8 my-10">
+      <section>
+
+      <div className="grid grid-cols-2  md:grid-cols-4 justify-center items-center gap-8 my-10">
         <ServiceCard
           img="https://cdn.iconscout.com/icon/premium/png-512-thumb/storage-2209978-1844721.png?f=webp&w=256"
           alt="..."
           title="free storage"
-        />
+          />
         <ServiceCard
           img="https://cdn.iconscout.com/icon/premium/png-512-thumb/human-1654623-1403796.png?f=webp&w=256"
           alt="...."
           title="user more"
-        />
+          />
         <ServiceCard
           img="https://cdn.iconscout.com/icon/premium/png-512-thumb/replay-icon-9708977-7860609.png?f=webp&w=256"
           alt="..."
@@ -27,7 +29,10 @@ export default function Cards() {
           title="easy layout"
         />
       </div>
+          </section>
       {/* tranding card */}
+      <section className="py-5 ring-2">
+
       <div className=" my-10 sm:my-20 ">
         <p className=" text-lg  uppercase text-red-500  text-center ">
           tranding
@@ -35,7 +40,8 @@ export default function Cards() {
         <h2 className=" uppercase text-xl py-3 sm:py-5  text-center">
           tranding games
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 sm:mx-10 justify-center items-center gap-10
+        <div className="grid grid-cols-1  justify-center items-center gap-8 py-10
+        sm:grid-cols-2 sm:mx-10 
         md:grid-cols-2
         xl:grid-cols-4
         ">
@@ -65,13 +71,14 @@ export default function Cards() {
           />
         </div>
       </div>
+      </section>
 
       {/* top card */}
       <section className="my-10">
         <h2 className="text-xl pl-3 uppercase shadow-inner text-center">
           top games{" "}
         </h2>
-        <div className="my-10 grid grid-cols-1 sm:grid-cols-2 sm:mx-10  justify-center items-center gap-10
+        <div className="my-10 grid grid-cols-1 sm:grid-cols-2 sm:mx-10 py-5  justify-center items-center gap-10
         md:grid-cols-2
         xl:grid-cols-4
         ">
@@ -117,7 +124,7 @@ export default function Cards() {
       {/* categories card */}
       <section className="my-10">
         <h2 className="text-xl text-center uppercase">top categories</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 sm:mx-10 sm:gap-10 gap-8 justify-center items-center my-10
+        <div className="grid grid-cols-1 sm:grid-cols-2 sm:mx-10 sm:gap-10 gap-8 py-5 justify-center items-center my-10
         md:grid-cols-2
         lg:grid-cols-4
         ">
@@ -154,15 +161,15 @@ export default function Cards() {
 function ServiceCard(props) {
   return (
     <>
-      <div className="">
+      <div className="p-2">
         <img
           src={props.img}
           alt={props.alt}
-          className="size-32 m-auto md:w-28 ring-2 p-5 rounded-full
-           md:size-28  "
+          className="size-24 object-cover  m-auto ring-2 ring-blue-400 p-4 rounded-full
+           md:size-28 md:w-28 "
         />
         <p 
-        className="text-lg text-center 
+        className="text-md py-2 text-center 
         md:py-2
         "
         >{props.title}</p>
@@ -174,7 +181,7 @@ function ServiceCard(props) {
 function TrandCard(props) {
   return (
     <>
-      <div className="ring-2 ring-slate-300 shadow-2xl w-fit mx-auto ">
+      <div className="ring-2 ring-slate-300 hover:shadow-2xl w-fit mx-auto ">
         <div className="relative">
           <img src={props.img} alt={props.alt} className="size-auto mx-auto" />
           <span className=" absolute top-8  right-7 ring-2 bg-blue-500 px-2 py-1 rounded-full ring-slate-200 text-white ">
@@ -182,8 +189,8 @@ function TrandCard(props) {
           </span>
         </div>
         <div className="">
-          <p className="pl-5 py-1 uppercase sm:text-sm ">{props.type}</p>
-          <h4 className="pl-5 text-xl sm:text-lg">{props.name}</h4>
+          <p className="pl-5 py-1 uppercase sm:text-sm text-sm ">{props.type}</p>
+          <h4 className="pl-5 text-lg sm:text-lg">{props.name}</h4>
           <Link className="">
             <img
               src="https://cdn.iconscout.com/icon/premium/png-512-thumb/buy-3412102-2851670.png?f=webp&w=256"
@@ -200,7 +207,7 @@ function TrandCard(props) {
 function TopCard(props) {
   return (
     <>
-      <div className="size-max m-auto text-center ring-2 pb-5 ring-slate-300 shadow-2xl ">
+      <div className="size-max m-auto text-center ring-2 pb-5 ring-slate-300 hover:shadow-2xl ">
         <img src={props.img} alt={props.alt} className="size-72" />
         <p className="py-2 uppercase text-md">{props.type}</p>
         <h5 className="text-lg mb-4 ">{props.name}</h5>
@@ -218,7 +225,7 @@ function TopCard(props) {
 function CatgoriesCard(props) {
   return (
     <>
-      <div className="size-max m-auto ring-2 ring-slate-300 shadow-2xl  ">
+      <div className="size-max m-auto ring-2 ring-slate-300 hover:shadow-2xl  ">
         <p className="bg-blue-700 py-3 text-center text-lg uppercase rounded-sm text-white ">
           action
         </p>
