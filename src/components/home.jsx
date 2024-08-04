@@ -58,7 +58,7 @@ function Content(props) {
             <input
               type="text"
               placeholder="Type Something"
-              className="px-5  py-2 sm:px-8 rounded-s-2xl md:px-3 md:py-3"
+              className="px-5  text-black py-2 sm:px-8 rounded-s-2xl md:px-3 md:py-3"
             />
             <input
               type="submit"
@@ -71,12 +71,12 @@ function Content(props) {
           <img
             src={props.img}
             alt="..."
-            className="size-4/5 sm:size-2/3 md:size-80 object-cover m-auto relative"
+            className="size-4/5 sm:size-2/3 md:size-80 rounded-lg object-cover m-auto relative"
           />
-          <span className=" absolute left-20 sm:left-52 -bottom-36 sm:-bottom-60 md:left-10 md:bottom-10 bg-yellow-500 px-3 py-2 md:px-2  rounded-full text-white font-bold ">
+          <span className=" hidden absolute left-20 sm:left-52 -bottom-36 sm:-bottom-60 md:left-10 md:bottom-10 bg-yellow-500 px-3 py-2 md:px-2  rounded-full text-white font-bold ">
             -40%
           </span>
-          <span className="absolute right-20 sm:right-48   top-3/4 bg-yellow-500 px-3 py-1 rounded-full text-white font-bold md:px-2 md:right-10 md:top-10">
+          <span className=" hidden absolute right-20 sm:right-48   top-3/4 bg-yellow-500 px-3 py-1 rounded-full text-white font-bold md:px-2 md:right-10 md:top-10">
             {" "}
             $22
           </span>

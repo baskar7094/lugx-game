@@ -6,15 +6,15 @@ export default function Navbar() {
     <div>
       <nav className=" grid grid-cols-2 md:flex  justify-between items-center px-10 py-5 lg:px-10 lg:py-5 ">
         <Link to="/" className="">
-          <img src={logo} alt="...." className="w-32 sm:w-40 lg:w-40 h-auto" />
+          <img src={logo} alt="...." className="w-32 md:w-28 sm:w-40 lg:w-40 h-auto" />
         </Link>
-        <button className=" md:hidden ring-2 shadow-2xl ring-slate-200 px-2 w-12  sm:w-16  ml-auto rounded-md bg-slate-200">
+        <button className=" md:hidden ring-2 text-center shadow-2xl ring-slate-200 px-2 w-12  sm:w-16  ml-auto rounded-md bg-slate-200">
           <span>
             <i className="fas fa-list "></i>
           </span>
         </button>
         <div className=" hidden md:flex">
-          <ul className=" text-white  capitalize md:flex md:flex-wrap md:gap-5 lg:gap-8 my-3 md:my-0  w-full  ">
+          <ul className=" text-white  capitalize md:flex md:flex-wrap md:gap-4 lg:gap-8 my-3 md:my-0  w-full  ">
             <li>
               <Link
                 to={"/"}

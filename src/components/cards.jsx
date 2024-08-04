@@ -36,7 +36,7 @@ export default function Cards() {
           tranding games
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 sm:mx-10 justify-center items-center gap-10
-        md:grid-cols-3
+        md:grid-cols-2
         xl:grid-cols-4
         ">
           <TrandCard
@@ -72,7 +72,7 @@ export default function Cards() {
           top games{" "}
         </h2>
         <div className="my-10 grid grid-cols-1 sm:grid-cols-2 sm:mx-10  justify-center items-center gap-10
-        md:grid-cols-3 
+        md:grid-cols-2
         xl:grid-cols-4
         ">
           <TopCard
@@ -118,9 +118,13 @@ export default function Cards() {
       <section className="my-10">
         <h2 className="text-xl text-center uppercase">top categories</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 sm:mx-10 sm:gap-10 gap-8 justify-center items-center my-10
-        md:grid-cols-3
+        md:grid-cols-2
         lg:grid-cols-4
         ">
+          <CatgoriesCard
+            img="https://templatemo.com/templates/templatemo_589_lugx_gaming/assets/images/categories-01.jpg"
+            alt="...."
+          />
           <CatgoriesCard
             img="https://templatemo.com/templates/templatemo_589_lugx_gaming/assets/images/categories-01.jpg"
             alt="...."
@@ -154,7 +158,7 @@ function ServiceCard(props) {
         <img
           src={props.img}
           alt={props.alt}
-          className="size-32 m-auto ring-2 p-5 rounded-full
+          className="size-32 m-auto md:w-28 ring-2 p-5 rounded-full
            md:size-28  "
         />
         <p 
