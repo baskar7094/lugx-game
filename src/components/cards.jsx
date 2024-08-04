@@ -31,7 +31,7 @@ export default function Cards() {
       </div>
           </section>
       {/* tranding card */}
-      <section className="py-5 ring-2">
+      <section className="py-5 ring-2 ">
 
       <div className=" my-10 sm:my-20 ">
         <p className=" text-lg  uppercase text-red-500  text-center ">
@@ -165,7 +165,7 @@ function ServiceCard(props) {
         <img
           src={props.img}
           alt={props.alt}
-          className="size-24 object-cover  m-auto ring-2 ring-blue-400 p-4 rounded-full
+          className="size-24 object-cover   m-auto ring-2 ring-blue-400 p-4 rounded-full
            md:size-28 md:w-28 "
         />
         <p 
@@ -181,7 +181,7 @@ function ServiceCard(props) {
 function TrandCard(props) {
   return (
     <>
-      <div className="ring-2 ring-slate-300 hover:shadow-2xl w-fit mx-auto ">
+      <div className="ring-2 ring-slate-300 hover:shadow-2xl hover:rounded-lg w-fit mx-auto ">
         <div className="relative">
           <img src={props.img} alt={props.alt} className="size-auto mx-auto" />
           <span className=" absolute top-8  right-7 ring-2 bg-blue-500 px-2 py-1 rounded-full ring-slate-200 text-white ">
@@ -207,7 +207,7 @@ function TrandCard(props) {
 function TopCard(props) {
   return (
     <>
-      <div className="size-max m-auto text-center ring-2 pb-5 ring-slate-300 hover:shadow-2xl ">
+      <div className="size-max m-auto text-center ring-2 pb-5 ring-slate-300 hover:shadow-2xl hover:rounded-lg ">
         <img src={props.img} alt={props.alt} className="size-72" />
         <p className="py-2 uppercase text-md">{props.type}</p>
         <h5 className="text-lg mb-4 ">{props.name}</h5>
@@ -225,7 +225,7 @@ function TopCard(props) {
 function CatgoriesCard(props) {
   return (
     <>
-      <div className="size-max m-auto ring-2 ring-slate-300 hover:shadow-2xl  ">
+      <div className="size-max m-auto ring-2 ring-slate-300 hover:shadow-2xl hover:rounded-lg  ">
         <p className="bg-blue-700 py-3 text-center text-lg uppercase rounded-sm text-white ">
           action
         </p>
