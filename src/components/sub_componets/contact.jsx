@@ -3,7 +3,7 @@ import React from 'react'
 export default function Contact() {
   return (
     <div>
-   <form action="" className='bg-img text-white flex flex-col justify-center w-11/12 gap-5 py-5  text-center'>
+   <form  className='bg-img text-white flex flex-col justify-center w-11/12 gap-5 py-5  text-center'>
    <h2 className='text-white text-xl text-center py-3 animate-bounce leading-tight uppercase'>flied the details</h2>
     <label htmlFor="" className=''>user name</label>
     <input type="text" placeholder='enter user name ' className='text-black py-1' />

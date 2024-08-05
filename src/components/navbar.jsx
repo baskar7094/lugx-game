@@ -7,10 +7,10 @@ import $ from 'jquery'
 export default function Navbar() {
 
   useEffect(() => {
-    $(document).ready(function () {
+    $(document).ready(function() {
 
-      $('#btn').click(function () {
-        $('#collpase').slideDown()
+      $('#btn').click(function() {
+        $('#collpase').slideToggle()
       })
 
 
