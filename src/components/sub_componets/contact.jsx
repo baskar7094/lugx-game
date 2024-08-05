@@ -1,25 +1,24 @@
 import React from 'react'
+import Navbar from '../navbar'
+import { FooterCompon } from '../home'
 
 export default function Contact() {
   return (
     <div>
-   <form  className='bg-img text-white flex flex-col justify-center w-11/12 gap-5 py-5  text-center'>
-   <h2 className='text-white text-xl text-center py-3 animate-bounce leading-tight uppercase'>flied the details</h2>
-    <label htmlFor="" className=''>user name</label>
-    <input type="text" placeholder='enter user name ' className='text-black py-1' />
-    <label htmlFor="">last name</label>
-    <input type="text" placeholder='enter last name'  className='text-black py-1'/>
-    <label htmlFor="">age</label>
-    <input type="text" placeholder='enter your age'  className='text-black py-1'/>
-    <label htmlFor="">gender</label>
-    <select name="" id="" className='text-black py-1'>
-        <option value="male" className='text-black py-1'>male</option>
-        <option value="female" className='text-black py-1'>female</option>
-    </select>
-    <label htmlFor="">email</label>
-    <input type="email" placeholder='enter your email' className='text-black py-1'  />
-<button type='submit' className='ring-2  w-fit m-auto px-4 py-1 hover:shadow-2xl text-lg capitalize'>submit</button>
-   </form>
+<div className='bg-img  '>
+<Navbar/>
+<div className='text-white  bg-img py-20'>
+  <h2 className='text-2xl lg:text-3xl text-center font-bold py-4 px-4'>my company details from contact</h2>
+  <address className='p-5 flex flex-col gap-10 md:text-center lg:text-xl'>
+  name : kavin <br />
+  contact email : personalm882@gmail.com <br />
+  contact mobile number : +1 1289798423 <br />
+
+  from online services <span className='text-red-500'>please contact email address (or) mobile number</span>
+  </address>
+</div>
+<FooterCompon/>
+</div>
     </div>
   )
 }
