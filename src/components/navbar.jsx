@@ -46,7 +46,7 @@ export default function Navbar() {
               <LinkCompon name="contact" to="/contact" />
             </li>
             <li className="py-2">
-              <LinkCompon name="account" />
+              <LinkCompon name="account" to="/account" />
             </li>
 
 
