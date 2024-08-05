@@ -25,17 +25,8 @@ export default function Home() {
         <Contact />
         </section>
       </main>
-
-      <footer>
-        <div className="py-5 sm:text-center">
-          <p className="text-white text-md text-center ">
-            copyright &copy; 2048 LUGX gaming Company. all rights reserved.
-          </p>
-          <p className="text-white text-md pt-3 text-center">
-            design templateMo
-          </p>
-        </div>
-      </footer>
+<FooterCompon/>
+   
     </>
   );
 }
@@ -84,4 +75,19 @@ function Content(props) {
       </div>
     </section>
   );
+}
+
+export function FooterCompon(){
+  return(
+    <footer>
+    <div className="py-5 sm:text-center">
+      <p className="text-white text-md text-center ">
+        copyright &copy; 2048 LUGX gaming Company. all rights reserved.
+      </p>
+      <p className="text-white text-md pt-3 text-center">
+        design templateMo
+      </p>
+    </div>
+  </footer>
+  )
 }

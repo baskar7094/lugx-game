@@ -1,6 +1,8 @@
 import Home from "./components/home"
 import Navbar from "./components/navbar"
 import {BrowserRouter,Routes,Route} from 'react-router-dom'
+import Spical from "./components/sub_componets/spical"
+import Contact from "./components/sub_componets/contact"
 function App() {
 
   return (
@@ -8,6 +10,8 @@ function App() {
 <Routes>
   <Route path="/" element={<Navbar/>}/>
   <Route index element={<Home/>}/>
+  <Route path="spical" element={<Spical/>}/>
+ <Route path="contact"  element={<Contact/>}/>
 </Routes>
 
     </BrowserRouter>

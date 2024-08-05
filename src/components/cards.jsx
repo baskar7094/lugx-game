@@ -165,7 +165,7 @@ function ServiceCard(props) {
         <img
           src={props.img}
           alt={props.alt}
-          className="size-24 object-cover   m-auto ring-2 ring-blue-400 p-4 rounded-full
+          className="size-20 object-cover   m-auto ring-2 ring-blue-400 p-4 rounded-full
            md:size-28 md:w-28 "
         />
         <p 
@@ -178,13 +178,13 @@ function ServiceCard(props) {
   );
 }
 
-function TrandCard(props) {
+ function TrandCard(props) {
   return (
     <>
       <div className="ring-2 ring-slate-300 hover:shadow-2xl hover:rounded-lg w-fit mx-auto ">
         <div className="relative">
           <img src={props.img} alt={props.alt} className="size-auto mx-auto" />
-          <span className=" absolute top-8  right-7 ring-2 bg-blue-500 px-2 py-1 rounded-full ring-slate-200 text-white ">
+          <span className=" hidden absolute top-8  right-7 ring-2 bg-blue-500 px-2 py-1 rounded-full ring-slate-200 text-white ">
             $20
           </span>
         </div>
@@ -204,11 +204,11 @@ function TrandCard(props) {
   );
 }
 
-function TopCard(props) {
+ export function TopCard(props) {
   return (
     <>
       <div className="size-max m-auto text-center ring-2 pb-5 ring-slate-300 hover:shadow-2xl hover:rounded-lg ">
-        <img src={props.img} alt={props.alt} className="size-72" />
+        <img src={props.img} alt={props.alt} className="size-72 object-cover bg-cover object-center" />
         <p className="py-2 uppercase text-md">{props.type}</p>
         <h5 className="text-lg mb-4 ">{props.name}</h5>
         <Link
