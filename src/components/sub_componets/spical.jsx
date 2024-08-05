@@ -37,7 +37,7 @@ function Cards(props){
 function ACtionGames(props){
     return(
         <>
-        <div className='mx-3 grid grid-cols-2 gap-5 my-10'>
+        <div className='mx-3 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 my-10'>
 <div className=''>
       <img src="https://w0.peakpx.com/wallpaper/105/282/HD-wallpaper-fire-ff-games-thumbnail.jpg"
       className='w-52 h-60 object-cover rounded-lg m-auto object-center'
